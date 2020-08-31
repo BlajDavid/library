@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linear_layout"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".StartActivity">
+    android:layout_height="match_parent">
 
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/logo" />
-
-    <Button
-        android:id="@+id/btn_login"
+    <LinearLayout
+        android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_background"
-        android:text="@string/login"
-        android:textColor="@color/colorPrimaryText" />
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="10dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo" />
 
-    <Button
-        android:id="@+id/btn_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_background"
-        android:text="@string/register"
-        android:textColor="@color/colorPrimaryText" />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="@string/login"
+            android:textColor="@color/colorPrimaryText" />
 
-</LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="@string/register"
+            android:textColor="@color/colorPrimaryText" />
+    </LinearLayout>
+
+</RelativeLayout>
